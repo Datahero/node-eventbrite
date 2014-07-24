@@ -3,7 +3,7 @@
 A node.js library for the eventbrite API
 
 _node-eventbrite_ exposes the following features of the eventbrite API to your node.js application:
- 
+
  * eventbrite API (Versions v3)
 
 Further information on the eventbrite API and its features is available at [https://developer.eventbrite.com](https://developer.eventbrite.com)
@@ -13,7 +13,7 @@ Further information on the eventbrite API and its features is available at [http
 Installing using npm (node package manager):
 
     npm install node-eventbrite
-    
+
 If you don't have npm installed or don't want to use it:
 
     cd ~/.node_libraries
@@ -32,7 +32,7 @@ _eventbriteAPI_ takes two arguments. The first argument is your API key, which y
  * `version` The API version to use. Defaults to v3.
  * `secure` Whether or not to use secure connections over HTTPS (true/false). Defaults to false.
  * `userAgent` Custom User-Agent description to use in the request header.
- 
+
 The callback function for each API method gets two arguments. The first one is an error object which is null when no error occured, the second one an object with all information retrieved as long as no error occured.
 
 Example:
@@ -40,12 +40,15 @@ Example:
 ```javascript
 var eventbriteAPI = require('eventbrite').eventbriteAPI;
 
-var apiKey = 'Your eventbrite API Key';
+var token = 'a users eventbrite API token';
 
-try { 
-    var api = new eventbriteAPI(apiKey, { version : 'v3', secure : false });
+try {
+    var api = eventbriteAPI({
+      token: token,
+      version : 'v3'
+    });
 } catch (error) {
-    console.log(error.message);
+    console.log(error.message); // the options are missing, this function throws an error.
 }
 
 api.user.owned_events({ id: 30 }, function (error, data) {
@@ -56,7 +59,7 @@ api.user.owned_events({ id: 30 }, function (error, data) {
 });
 
 ```
-  
+
 ## License
 
-_node-eventbrite_ is licensed under the MIT License. (See LICENSE) 
+_node-eventbrite_ is licensed under the MIT License. (See LICENSE)
