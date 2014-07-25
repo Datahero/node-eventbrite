@@ -7,13 +7,14 @@
     "company": "Datahero, Inc.",
     "email": "jeff@datahero.com"
   },
-  "license" : "MIT",
+  "license": "MIT",
   "main": "./lib/eventbrite",
   "repository": {
     "type": "git",
     "url": "https://github.com/Datahero/node-eventbrite.git"
   },
   "dependencies": {
+    "querystring": "^0.2.0",
     "request": "2.x.x"
   }
 }

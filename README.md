@@ -1,12 +1,12 @@
 # node-eventbrite
 
-A node.js library for the eventbrite API
+A node.js library for the eventbrite API(further details: https://developer.eventbrite.com)
 
 _node-eventbrite_ exposes the following features of the eventbrite API to your node.js application:
 
- * eventbrite API (Versions v3)
+**Version v3**
+  * user-details
 
-Further information on the eventbrite API and its features is available at [https://developer.eventbrite.com](https://developer.eventbrite.com)
 
 ## Installation
 
@@ -27,18 +27,28 @@ Information on how to use the eventbrite APIs can be found below. Further inform
 
 ### eventbrite API
 
-_eventbriteAPI_ takes two arguments. The first argument is your API key, which you can find in your eventbrite Account. The second argument is an options object which can contain the following options:
+_eventbriteAPI_ takes an options object, The only required option for version3 of the api is an oAuth token.
 
- * `version` The API version to use. Defaults to v3.
- * `secure` Whether or not to use secure connections over HTTPS (true/false). Defaults to false.
- * `userAgent` Custom User-Agent description to use in the request header.
+http://developer.eventbrite.com/docs/auth/
+> All API requests must be authenticated with a valid OAuth token. Tokens are tied to user accounts; if you’re just using the API for a single user or organizer, then follow ‘Personal Tokens’ if you’re using the API for many Eventbrite users, then follow ‘OAuth Token Flow’.
+which you can find in your eventbrite Account. The second argument is an options object which can contain the following options:
 
-The callback function for each API method gets two arguments. The first one is an error object which is null when no error occured, the second one an object with all information retrieved as long as no error occured.
+**required options:**
+* `token`
+
+**available options**
+* `version` The API version to use. Defaults to v3.
+* `userAgent` Custom User-Agent description to use in the request header.
+* `contentType`  defaults to `application/json` and currently the api only supports json
+
+The callback function for each API method gets two arguments, an error and results object.
+
+The error object is null when no error occured. The results object contains all information retrieved as long as no error occurred.
 
 Example:
 
 ```javascript
-var eventbriteAPI = require('eventbrite').eventbriteAPI;
+var eventbriteAPI = require('eventbrite');
 
 var token = 'a users eventbrite API token';
 
@@ -51,7 +61,7 @@ try {
     console.log(error.message); // the options are missing, this function throws an error.
 }
 
-api.user.owned_events({ id: 30 }, function (error, data) {
+api.owned_events({ user_id: 30 }, function (error, data) {
     if (error)
         console.log(error.message);
     else
@@ -63,3 +73,6 @@ api.user.owned_events({ id: 30 }, function (error, data) {
 ## License
 
 _node-eventbrite_ is licensed under the MIT License. (See LICENSE)
+
+
+## [Contributors](https://github.com/Datahero/node-eventbrite/graphs/contributors)
