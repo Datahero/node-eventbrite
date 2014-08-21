@@ -70,55 +70,6 @@ api.owned_events({ user_id: 30 }, function (error, data) {
 
 ```
 
-
-#### Events
-[http://developer.eventbrite.com/docs/event-search/](Event Search) TODO
-
-[http://developer.eventbrite.com/docs/event-categories/](Event Categories) TODO
-
-[http://developer.eventbrite.com/docs/event-details/](Event Details)
-
-[http://developer.eventbrite.com/docs/event-attendees](Event Attendees)
-
-[http://developer.eventbrite.com/docs/event-attendees-detail](Event Attendees’ Detail)
-
-[http://developer.eventbrite.com/docs/event-orders](Event Orders)
-
-[http://developer.eventbrite.com/docs/event-discounts](Event Discounts)
-
-[http://developer.eventbrite.com/docs/event-access-codes](Event Access Codes)
-
-[http://developer.eventbrite.com/docs/event-transfers](Event Transfers)
-
-[http://developer.eventbrite.com/docs/event-teams](Event Teams)
-
-[http://developer.eventbrite.com/docs/event-teams-details](Event Teams’ Details)
-
-[http://developer.eventbrite.com/docs/event-teams-attendees](Event Teams’ Attendees)
-
-#### Users
-[http://developer.eventbrite.com/docs/user-details/](User Details)
-
-[http://developer.eventbrite.com/docs/user-orders/](User Orders)
-
-[http://developer.eventbrite.com/docs/user-owned-events/](User Owned Events)
-
-[http://developer.eventbrite.com/docs/user-owned-events-orders/](User Owned Events’ Orders)
-
-[http://developer.eventbrite.com/docs/user-owned-events-attendees/](User Owned Events’ Attendees)
-
-[http://developer.eventbrite.com/docs/user-venues/](User Venues)
-
-[http://developer.eventbrite.com/docs/user-organizers/](User Organizers)
-
-#### Orders
-[http://developer.eventbrite.com/docs/order-details/](Order Details)
-
-#### Contact Lists
-[http://developer.eventbrite.com/docs/contact-lists/](Contact Lists)
-
-[http://developer.eventbrite.com/docs/contact-list-details/](Contact List Details)
-
 ## License
 
 _node-eventbrite_ is licensed under the MIT License. (See LICENSE)
