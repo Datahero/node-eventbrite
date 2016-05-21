@@ -48,7 +48,7 @@ The error object is null when no error occured. The results object contains all 
 Example:
 
 ```javascript
-var eventbriteAPI = require('eventbrite');
+var eventbriteAPI = require('node-eventbrite');
 
 var token = 'a users eventbrite API token';
 
