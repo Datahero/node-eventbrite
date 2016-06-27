@@ -1,11 +1,11 @@
 {
   "name": "node-eventbrite",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "A node.js wrapper for the eventbrite API.",
   "author": {
     "name": "Jeff Zabel",
     "company": "Datahero, Inc.",
-    "email": "jeff@datahero.com"
+    "email": "jeff@zabel.me"
   },
   "license": "MIT",
   "main": "./lib/eventbrite",
