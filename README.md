@@ -25,6 +25,27 @@ Please note that parts of _node-eventbrite_ depend on [request](http://github.co
 
 Information on how to use the eventbrite APIs can be found below. Further information on the API methods available can be found at [https://developer.eventbrite.com](https://developer.eventbrite.com). You can also find further information on how to obtain an API key, and/or OAuth2 in your eventbrite account and much more on the eventbrite API pages.
 
+<div style="margin: 25px;">
+<a href="https://rapidapi.com/package/EventbriteAPI/functions?utm_source=EventbriteGitHub-nodeSDK&utm_medium=button&utm_content=Vendor_GitHub" style="
+    all: initial;
+    background-color: #498FE1;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    font-family: 'Helvetica';
+    font-size: 12pt;
+    background-image: url(https://scdn.rapidapi.com/logo-small.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+    padding-left: 44px;
+    cursor: pointer;">
+  Run now on <b>RapidAPI</b>
+</a>
+</div>
+
 ### eventbrite API
 
 _eventbriteAPI_ takes an options object, The only required option for version3 of the api is an oAuth token.
