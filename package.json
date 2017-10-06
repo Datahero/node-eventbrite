@@ -1,6 +1,6 @@
 {
   "name": "node-eventbrite",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "A node.js wrapper for the eventbrite API.",
   "author": {
     "name": "Jeff Zabel",
