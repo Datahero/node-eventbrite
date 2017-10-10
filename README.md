@@ -23,7 +23,8 @@ Please note that parts of _node-eventbrite_ depend on [request](http://github.co
 
 ## Usage
 
-Information on how to use the eventbrite APIs can be found below. Further information on the API methods available can be found at [https://developer.eventbrite.com](https://developer.eventbrite.com). You can also find further information on how to obtain an API key, and/or OAuth2 in your eventbrite account and much more on the eventbrite API pages.
+- Information on how to use the eventbrite APIs can be found below. Further information on the API methods available can be found at [https://developer.eventbrite.com](https://developer.eventbrite.com). You can also find further information on how to obtain an API key, and/or OAuth2 in your eventbrite account and much more on the eventbrite API pages.
+- Apart from ID's, all the parameters are expect as a flat object: Ex: {"event.name.html": "my event name", "event.online_event": true, "event.currency": "USD"}
 
 ### eventbrite API
 
